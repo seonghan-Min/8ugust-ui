@@ -10449,9 +10449,9 @@
   }
   
   .sidebar .sidebar-brand {
-    height: 4.375rem;
+    height: 7rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 800;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -10543,8 +10543,9 @@
       margin-right: 0.25rem;
     }
     .sidebar .nav-item .nav-link span {
-      font-size: 0.85rem;
+      font-size: 1rem;
       display: inline;
+      padding-left: 0.5rem;
     }
     .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
       width: 1rem;
@@ -11278,5 +11279,9 @@
   
   body.sidebar-toggled footer.sticky-footer {
     width: 100%;
+  }
+
+  .icon-home:before {
+    content: "\e900";
   }
   
