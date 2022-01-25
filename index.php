@@ -1,7 +1,7 @@
 <?php ?>
 <html lang="ko">
     <head>
-        <?php include("include/header.php"); ?>
+        <?php include("../include/header.php"); ?>
     </head>
     <body>
         <!-- Page Wrapper -->
