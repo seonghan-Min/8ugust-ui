@@ -1,12 +1,12 @@
 <?php ?>
 <html lang="ko">
     <head>
-        <?php include("../include/header.php"); ?>
+        <? include($_SERVER["DOCUMENT_ROOT"]."/include/header.php"); ?>
     </head>
     <body>
         <!-- Page Wrapper -->
         <div id="wrapper">
-            <?php include("include/sidebar.php"); ?>
+            <? include($_SERVER["DOCUMENT_ROOT"]."/include/sidebar.php"); ?>
         </div>
         <!-- Page Wrapper -->
     </body>
