@@ -20,3 +20,8 @@ function enterKey(page) {
         }
     }
 }
+
+// 토큰 유효성 검사
+function checkTokenAPI(token) {
+    alert('검사 할 시간');
+}
