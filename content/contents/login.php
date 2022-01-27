@@ -9,10 +9,10 @@
         <form action="index.html" method="post" class="loginForm">
             <h2>Login</h2>
             <div class="idForm">
-                <input type="text" class="em" id="email" placeholder="EMAIL">
+                <input type="text" class="em" id="email" onkeypress="enterKey('login');" placeholder="EMAIL">
             </div>
             <div class="passForm">
-                <input type="password" class="pw" id="password" placeholder="PW">
+                <input type="password" class="pw" id="password" onkeypress="enterKey('login');" placeholder="PW">
             </div>
             <button type="button" class="btn login" id="login">LOG IN</button>
             <button type="button" class="btn signin" id="signin">SIGN IN</button>

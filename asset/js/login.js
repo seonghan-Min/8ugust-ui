@@ -33,7 +33,6 @@ function loginScript () {
 
     // 로그인 API
     function callLoginApi () {
-        console.log('login_api');
         $.ajax({
             url: "http://localhost:4685/api/v1" + "/auth/login",
             type: "POST",
@@ -43,7 +42,10 @@ function loginScript () {
                 password : global.login_pw
             },
             success: function (res) {
-                console.log(res);
+                localStorage.setItem('access_token', res.access_token);
+                localStorage.setItem('login_yn', 'Y');
+                alert('로그인 성공');
+                window.location.href = document.referrer;
             },
             error: function (err) {
                 if (err.statusText == 'Unauthorized') {
