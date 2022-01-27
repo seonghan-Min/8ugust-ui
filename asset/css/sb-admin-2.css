@@ -10332,6 +10332,8 @@
     cursor: pointer;
     background-color: #0069d9;
     border-radius: 0.5rem;
+    font-weight: bold;
+    color: #fff;
   }
   
   .sidebar {
