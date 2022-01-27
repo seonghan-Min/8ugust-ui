@@ -10318,6 +10318,21 @@
   .topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
     color: #858796;
   }
+
+  .topbar.navbar-light .navbar-nav .nav-item .btn-user{
+    display: none;
+  }
+
+  .topbar.navbar-light .navbar-nav .nav-item .btn-login{
+    display: block;
+    height: auto;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    border-color: #0062cc;
+    cursor: pointer;
+    background-color: #0069d9;
+    border-radius: 0.5rem;
+  }
   
   .sidebar {
     width: 6.5rem;
@@ -11284,4 +11299,11 @@
   .icon-home:before {
     content: "\e900";
   }
+
+  .btn-login {
+    display: block;
+  }
   
+  .btn-user {
+    display: none;
+  }
