@@ -18,6 +18,21 @@ function index_init () {
             var jwt = JSON.parse(payload.toString())
 
             if (jwt.exp*1000 > Date.now()) {
+                $.ajax({
+                    url : "http://localhost:4330/api/v1" + "/auth/me",
+                    type: "POST",
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("Content-type", "application/json");
+                        xhr.setRequestHeader("Authorization", "Bearer " + global.access_token);
+                    },
+                    timeout: 600000,
+                    success: function (res) {
+                        alert(res);
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
                 $('#userDropdown').css('display', 'flex');
                 $('#userLoginBtn').css('display', 'none');
                 checkTokenAPI(global.access_token);
