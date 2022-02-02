@@ -27,6 +27,7 @@ function index_init () {
                     },
                     timeout: 600000,
                     success: function (res) {
+                        console.log(res);
                         alert(res);
                     },
                     error: function (err) {
