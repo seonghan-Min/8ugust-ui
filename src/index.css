@@ -1,0 +1,18 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+}
