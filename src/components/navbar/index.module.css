@@ -14,18 +14,17 @@
 }
 
 .nav-header-img {
-    width: 30%;
+    width: 20%;
     text-align: center;
     padding-top: 21.845px;
 }
 
 .nav-header-text {
-    width: 70%;
+    width: 80%;
     height: 93.69px;
     font-size: 25px;
     font-weight: bold;
     line-height: 93.69px;
-    padding-left: 10px;
     color: rgb(138, 136, 136);
 }
 
@@ -35,30 +34,45 @@
 }
 
 .nav-item {
-    height: 50px;
-    font-size: 20px;
-    padding-left: 20px;
+    height: 10%;
+    padding: 5%;
 }
 
-.nav-item:hover {
+.nav-item-inner {
+    height: 74.8px;
+    font-size: 20px;
+    padding-left: 5%;
+    font-weight: bold;
+    line-height: 74.8px;
+    color: rgb(138, 136, 136);
+}
+
+.nav-item-inner:hover {
     background-color: #D3D3D3;
 }
 
 .nav-footer {
+    width: 100%;
     height: 10%;
     font-size: 20px;
 }
 
 .nav-footer-wrap {
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: auto;
-    padding: 10px;
+}
+
+.nav-footer-txt-wrap {
+    width: 80%;
+    height: auto;
+    padding: 5%;
 }
 
 .nav-footer-txt {
-    width: 80%;
-    padding-left: 10px;
-    padding-top: 8px;
+    height: 55.13px;
+    line-height: 55.13px;
+    color: rgb(138, 136, 136);
 }
 
 .nav-footer-btn {
@@ -74,4 +88,9 @@
 .nav-footer-btn:hover {
     cursor: pointer;
     text-shadow: rgb(135, 147, 255) 1px 0 10px;
+}
+
+.nav-footer-btn:active {
+    color: #005eb1f5;
+    text-shadow: rgb(111, 121, 211) 1px 0 10px;
 }

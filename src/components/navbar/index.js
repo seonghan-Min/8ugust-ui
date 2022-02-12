@@ -12,14 +12,18 @@ function Navbar () {
                 <div className={styles['nav-header-text']}>8ugust</div>
             </div>
             <div className={styles['nav-menu']}>
-                <div className={styles['nav-item']}># HI</div>
-                <div className={styles['nav-item']}># HI</div>
-                <div className={styles['nav-item']}># HI</div>
-                <div className={styles['nav-item']}># HI</div>
+                <div className={styles['nav-item']}>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                </div>
             </div>
             <div className={styles['nav-footer']}>
                 <div className={styles['nav-footer-wrap']}>
-                    <div className={styles['nav-footer-txt']}>Create Room</div>
+                    <div className={styles['nav-footer-txt-wrap']}>
+                        <div className={styles['nav-footer-txt']}>Create a Room</div>
+                    </div>
                     <button className={styles['nav-footer-btn']}>+</button>
                 </div>
             </div>
