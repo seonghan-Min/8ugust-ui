@@ -6,8 +6,10 @@ function Navbar () {
     return (
         <div className={styles['navbar']}>
             <div className={styles['nav-header']}>
-                <img className={styles['nav-header-img']} src={profile} alt='profile_img'/>
-                <h3>8ugust</h3>
+                <div className={styles['nav-header-img']}>
+                    <img src={profile} alt='profile_img'/>
+                </div>
+                <div className={styles['nav-header-text']}>8ugust</div>
             </div>
             <div className={styles['nav-menu']}>
                 <div className={styles['nav-item']}># HI</div>
