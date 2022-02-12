@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 100vh;
+    height: calc(100vh - 2px);
 }
 
 .nav-header {
@@ -45,7 +45,7 @@
 }
 
 .nav-footer {
-    height: auto;
+    height: 10%;
     font-size: 20px;
 }
 
