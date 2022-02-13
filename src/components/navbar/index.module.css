@@ -2,55 +2,83 @@
     border-right: 1px solid #D3D3D3;
     flex-direction: column;
     align-items: center;
-    width: 15%;
-    height: 100%;
+    width: 20%;
+    height: calc(100vh - 2px);
 }
 
 .nav-header {
+    width: 100%;
+    height: 10%;
     display: flex;
     border-bottom: 1px solid #D3D3D3;
 }
 
 .nav-header-img {
-    margin-top: 6px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 20%;
+    text-align: center;
+    padding-top: 21.845px;
+}
+
+.nav-header-text {
+    width: 80%;
+    height: 93.69px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 93.69px;
+    color: rgb(138, 136, 136);
 }
 
 .nav-menu {
-    height: 765px;
-    margin: 20px;
+    height: 80%;
+    border-bottom: 1px solid #D3D3D3;
+    overflow: scroll;
+}
+
+.nav-menu::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #D3D3D3;
+}
+.nav-menu::-webkit-scrollbar-track {
+    display: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
 }
 
 .nav-item {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 50px;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.nav-item:hover {
-    background-color: #D3D3D3;
+    height: 10%;
+    padding: 5%;
 }
 
 .nav-footer {
-    height: 67px;
+    width: 100%;
+    height: 10%;
     font-size: 20px;
-    border-top: 1px solid #D3D3D3;
 }
 
 .nav-footer-wrap {
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: auto;
-    padding: 10px;
+}
+
+.nav-footer-txt-wrap {
+    width: 80%;
+    height: auto;
+    padding: 5%;
 }
 
 .nav-footer-txt {
-    width: 80%;
-    padding-left: 10px;
-    padding-top: 8px;
+    height: 55.13px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 55.13px;
+    color: rgb(138, 136, 136);
 }
 
 .nav-footer-btn {
@@ -66,4 +94,9 @@
 .nav-footer-btn:hover {
     cursor: pointer;
     text-shadow: rgb(135, 147, 255) 1px 0 10px;
+}
+
+.nav-footer-btn:active {
+    color: #005eb1f5;
+    text-shadow: rgb(111, 121, 211) 1px 0 10px;
 }
