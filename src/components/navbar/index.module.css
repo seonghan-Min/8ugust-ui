@@ -31,6 +31,22 @@
 .nav-menu {
     height: 80%;
     border-bottom: 1px solid #D3D3D3;
+    overflow: scroll;
+}
+
+.nav-menu::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #D3D3D3;
+}
+.nav-menu::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #f2f2f2;
 }
 
 .nav-item {
@@ -71,6 +87,8 @@
 
 .nav-footer-txt {
     height: 55.13px;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 55.13px;
     color: rgb(138, 136, 136);
 }

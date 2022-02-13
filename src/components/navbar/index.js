@@ -17,6 +17,20 @@ function Navbar () {
                     <div className={styles['nav-item-inner']}># HI</div>
                     <div className={styles['nav-item-inner']}># HI</div>
                     <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
+                    <div className={styles['nav-item-inner']}># HI</div>
                 </div>
             </div>
             <div className={styles['nav-footer']}>
