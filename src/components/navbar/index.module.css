@@ -55,19 +55,6 @@
     padding: 5%;
 }
 
-.nav-item-inner {
-    height: 74.8px;
-    font-size: 20px;
-    padding-left: 5%;
-    font-weight: bold;
-    line-height: 74.8px;
-    color: rgb(138, 136, 136);
-}
-
-.nav-item-inner:hover {
-    background-color: #D3D3D3;
-}
-
 .nav-footer {
     width: 100%;
     height: 10%;

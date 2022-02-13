@@ -1,7 +1,25 @@
+import React, {useState} from 'react';
 import styles from './index.module.css';
 import profile from '../../img/profile.png';
+import NavItem from '../NavItem/index.js';
+
 
 function Navbar () {
+    
+    const room_nm = 'HI';
+    const [roomId, setRoomId] = useState(1);
+    const [roomList, setRoomList] = useState([]);
+
+    function btnClick () {
+        setRoomList([
+            ...roomList,
+            {
+                id: roomId,
+                name: room_nm
+            }
+        ]);
+        setRoomId(roomId => roomId + 1);
+    }
 
     return (
         <div className={styles['navbar']}>
@@ -13,24 +31,7 @@ function Navbar () {
             </div>
             <div className={styles['nav-menu']}>
                 <div className={styles['nav-item']}>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
-                    <div className={styles['nav-item-inner']}># HI</div>
+                    {roomList.map((item) => <NavItem key={item.id} name={item.name} />)}
                 </div>
             </div>
             <div className={styles['nav-footer']}>
@@ -38,7 +39,7 @@ function Navbar () {
                     <div className={styles['nav-footer-txt-wrap']}>
                         <div className={styles['nav-footer-txt']}>Create a Room</div>
                     </div>
-                    <button className={styles['nav-footer-btn']}>+</button>
+                    <button className={styles['nav-footer-btn']} onClick={btnClick}>+</button>
                 </div>
             </div>
         </div>
