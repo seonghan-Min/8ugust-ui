@@ -4,7 +4,7 @@ import profile from '../../img/profile.png';
 import NavItem from '../NavItem/index.js';
 
 
-function Navbar () {
+function Navbar (props) {
     
     const room_nm = 'HI';
     const [roomId, setRoomId] = useState(1);
