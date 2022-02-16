@@ -1,24 +1,16 @@
-import React, {useState} from 'react';
+import React, { useEffect } from 'react';
 import styles from './index.module.css';
 import profile from '../../img/profile.png';
 import NavItem from '../NavItem/index.js';
 
 
-function Navbar () {
+function Navbar (props) {
     
-    const room_nm = 'HI';
-    const [roomId, setRoomId] = useState(1);
-    const [roomList, setRoomList] = useState([]);
+    const setIsModal = props.setIsModal;
+    const roomList = props.roomList;
 
     function btnClick () {
-        setRoomList([
-            ...roomList,
-            {
-                id: roomId,
-                name: room_nm
-            }
-        ]);
-        setRoomId(roomId => roomId + 1);
+        setIsModal(true);
     }
 
     return (
