@@ -1,11 +1,13 @@
 import styles from './index.module.css';
 
-function BodyContent () {
+function BodyContent (props) {
+
+    const current = props.current;
 
     return (
         <div className={styles['body-content']}>
             <div className={styles['content-header']}>
-                <div className={styles['content-header-txt']}># HI</div>
+                <div className={styles['content-header-txt']}># {current}</div>
             </div>
             <div className={styles['content-main']}>
                 bbb
