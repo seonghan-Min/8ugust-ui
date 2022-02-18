@@ -6,6 +6,7 @@ import NavItem from '../NavItem/index.js';
 
 function Navbar (props) {
     
+    const setCurrent = props.setCurrent;
     const setIsModal = props.setIsModal;
     const roomList = props.roomList;
 
@@ -23,7 +24,7 @@ function Navbar (props) {
             </div>
             <div className={styles['nav-menu']}>
                 <div className={styles['nav-item']}>
-                    {roomList.map((item) => <NavItem key={item.id} name={item.name} />)}
+                    {roomList.map((item) => <NavItem key={item.id} name={item.name} setCurrent={setCurrent}/>)}
                 </div>
             </div>
             <div className={styles['nav-footer']}>
