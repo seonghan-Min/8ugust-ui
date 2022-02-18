@@ -8,5 +8,6 @@
 }
 
 .nav-item-inner:hover {
+    cursor: pointer;
     background-color: #D3D3D3;
 }
