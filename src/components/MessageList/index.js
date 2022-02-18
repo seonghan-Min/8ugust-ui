@@ -8,6 +8,9 @@ function BodyContent (props) {
         <div className={styles['body-content']}>
             <div className={styles['content-header']}>
                 <div className={styles['content-header-txt']}># {current}</div>
+                <div className={styles['content-header-btn']}>
+                    <button>HI</button>
+                </div>
             </div>
             <div className={styles['content-main']}>
                 bbb

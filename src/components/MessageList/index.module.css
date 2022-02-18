@@ -4,17 +4,48 @@
 }
 
 .content-header {
+    width: 100%;
     height: 10%;
+    display: flex;
     border-bottom: 1px solid #D3D3D3;
 }
 
 .content-header-txt {
-    height: 94.5px;
+    width: 90%;
+    height: 87.797px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    line-height: 94.5px;
+    line-height: 87.797px;
     color: rgb(138, 136, 136);
+}
+
+.content-header-btn {
+    width: 10%;
+    height: 87.797px;
+    line-height: 87.797px;
+    text-align: center;
+}
+
+.content-header-btn > button {
+    width: 70%;
+    height: 60%;
+    transition: 0.3s;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0.5rem;
+    border: 1px solid #D3D3D3;
+    background-color: #F2F2F2;
+}
+
+.content-header-btn > :hover {
+    cursor: pointer;
+    background-color: #D3D3D3
+}
+
+.content-header-btn > :active {
+    transition: 0s;
+    background-color: #838282
 }
 
 .content-main {

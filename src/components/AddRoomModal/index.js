@@ -13,6 +13,12 @@ function AddRoomModal (props) {
     }
 
     function onClickCreate () {
+
+        if (roomNm === '') {
+            alert('Please enter your Room Name.');
+            return false;
+        }
+
         setRoomList([
             ...roomList,
             {
