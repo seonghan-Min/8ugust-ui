@@ -4,8 +4,8 @@ function MessageItem (props) {
 
     const date = new Date();
     const hour = date.getHours().length == 1 ? '0'+date.getHours() : date.getHours();
-    const min = date.getMinutes().length == 1 ? '0'+date.getMinutes() : date.getMinutes();
-    const now = hour + ':' + min; 
+    const min  = date.getMinutes().length == 1 ? '0'+date.getMinutes() : date.getMinutes();
+    const now  = hour + ':' + min; 
 
 
     return (
