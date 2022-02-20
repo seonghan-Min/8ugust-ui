@@ -1,0 +1,27 @@
+.item-top {
+    width: calc(100%-20px);
+    height: 10%;
+    display: flex;
+    padding: 20px;
+}
+
+.item-top > img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.item-top > div {
+    width: 100%;
+}
+
+.user-name {
+    font-size: 13px;
+    color: #D3D3D3;
+}
+
+.user-text {
+    padding-top: 5px;
+    font-size: 17px;
+}
