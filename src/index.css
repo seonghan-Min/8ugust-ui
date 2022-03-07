@@ -79,13 +79,63 @@ header {
 
 .site img {
 	width: 30px;
+	margin: 5px;
 	border-radius: 5px;
 	margin-bottom: 30px;
 }
 
+.site img:hover {
+	cursor: pointer;
+}
+
 .content-wrap {
-	width: 75%;
+	max-width: 75%;
+	display: flex;
+	padding: 20px;
 	margin-left: 25%;
+}
+
+.content-wrap .left {
+	width: 75%;
+	margin-right: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.content-wrap .right {
+	width: 25%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.right .instagram {
+	height: 400px;
+	padding: 10px;
+	background-color: white;
+}
+
+.instagram img {
+	margin-top: 15px;
+	width: 325px;
+}
+
+.instagram div {
+	height: 40px;
+	display: flex;
+	line-height: 40px;
+}
+
+.instagram div img {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border-radius: 50%;
+}
+
+.instagram div p {
+	font-weight: bold;
+	margin: 0 0 0 15px;
 }
 
 @media (max-width: 1000px) {
