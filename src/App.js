@@ -38,8 +38,8 @@ function App() {
 					</div>
 				</div>
 				<div className='site'>
-					<img src={instagram} onClick={() => window.location.href="https://www.instagram.com/8ugust_run/"}></img>
-					<img src={github} onClick={() => window.location.href="https://github.com/seonghan-Min"}></img>
+					<img alt='instagram' src={instagram} onClick={() => window.location.href="https://www.instagram.com/8ugust_run/"}></img>
+					<img alt='github' src={github} onClick={() => window.location.href="https://github.com/seonghan-Min"}></img>
 				</div>
 			</header>
 			<div className='content-wrap'>
@@ -47,12 +47,25 @@ function App() {
 					dsfasddfsa
 				</div>
 				<div className='right'>
+					<div className='recent-post'>
+						<div className='title'>
+							<h2>New Post</h2>
+						</div>
+						<div className='list'>
+							<div>[MyBatis] Spring Boot Gradle 에 ...</div>
+							<div>[JAVA] VSCode에 Spring Boot 설치</div>
+							<div>[JAVA] VSCode JAVA 개발환경 설정</div>
+							<div>[JAVA] 윈도우(window) JAVA SE 11 ...</div>
+							<div>[React] Modal 만들기 (React-Modal ...</div>
+							<div>[CSS] 다음카페 게시글 본문 꾸미기</div>
+						</div>
+					</div>
 					<div className='instagram'>
 						<div>
-							<img src={profile}></img> 
+							<img alt='profile' src={profile}></img> 
 							<p>8ugust_run</p>
 						</div>
-						<img src={profile}></img>
+						<img alt='profile' src={profile}></img>
 					</div>
 				</div>
 			</div>
