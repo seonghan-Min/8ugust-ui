@@ -8,7 +8,7 @@ import './index.css';
 
 function App() {
 	return (
-		<>
+		<div className='wrap'>
 			<header>
 				<div className='site-title'>
 					<h1>8UGUST.LOG</h1>
@@ -61,15 +61,18 @@ function App() {
 						</div>
 					</div>
 					<div className='instagram'>
-						<div>
+						<div className='title'>
 							<img alt='profile' src={profile}></img> 
 							<p>8ugust_run</p>
 						</div>
-						<img alt='profile' src={profile}></img>
+						<div className='insta-img'>
+							<img alt='profile' src={profile}></img>
+						</div>
+						<div className='good-btn'>♡</div>
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
   );
 }
 
