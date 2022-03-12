@@ -8,7 +8,7 @@ import './index.css';
 
 function App() {
 	return (
-		<div className='wrap'>
+		<>
 			<header>
 				<div className='site-title'>
 					<h1>8UGUST.LOG</h1>
@@ -72,7 +72,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
   );
 }
 
