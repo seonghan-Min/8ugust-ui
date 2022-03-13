@@ -1,14 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link, Route } from 'react-router-dom';
-import instagram from './img/Instagram_logo.png';
-import github from './img/Github_logo.png';
-import profile from './img/profile.png';
-import { FaRegHeart, FaRegComment, FaRegPaperPlane } from "react-icons/fa";
 import './index.css';
 import './media.css';
+import React, { useEffect } from 'react';
+import axios from 'axios';
+import ReactDOM from 'react-dom';
+import profile from './img/profile.png';
+import github from './img/Github_logo.png';
+import { Link, Route } from 'react-router-dom';
+import instagram from './img/Instagram_logo.png';
+import { FaRegHeart, FaRegComment, FaRegPaperPlane } from "react-icons/fa";
 
 function App() {
+
+	useEffect(() => {
+		const response = axios.get('tistory/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all');
+		console.log(response);
+	})
+
+	// const requestUrl = '/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all';
+	// const xhr = new XMLHttpRequest();
+	// xhr.open('GET', requestUrl);
+	// xhr.onreadystatechange = function () {
+	// 	console.log(xhr.responseText);
+	// };
+	// xhr.send();
+
 	return (
 		<>
 			<header>
