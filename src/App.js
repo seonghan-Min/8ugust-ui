@@ -4,7 +4,9 @@ import { Link, Route } from 'react-router-dom';
 import instagram from './img/Instagram_logo.png';
 import github from './img/Github_logo.png';
 import profile from './img/profile.png';
+import { FaRegHeart, FaRegComment, FaRegPaperPlane } from "react-icons/fa";
 import './index.css';
+import './media.css';
 
 function App() {
 	return (
@@ -68,7 +70,11 @@ function App() {
 						<div className='insta-img'>
 							<img alt='profile' src={profile}></img>
 						</div>
-						<div className='good-btn'>♡</div>
+						<div className='insta-footer'>
+							<span><FaRegHeart size={22}/></span>
+							<span><FaRegComment size={22}/></span>
+							<span><FaRegPaperPlane size={22}/></span>
+						</div>
 					</div>
 				</div>
 			</div>
