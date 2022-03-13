@@ -12,17 +12,8 @@ import { FaRegHeart, FaRegComment, FaRegPaperPlane } from "react-icons/fa";
 function App() {
 
 	useEffect(() => {
-		const response = axios.get('tistory/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all');
-		console.log(response);
+		const response = axios.get('tistory/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all', null, { widhCredential : true });
 	})
-
-	// const requestUrl = '/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all';
-	// const xhr = new XMLHttpRequest();
-	// xhr.open('GET', requestUrl);
-	// xhr.onreadystatechange = function () {
-	// 	console.log(xhr.responseText);
-	// };
-	// xhr.send();
 
 	return (
 		<>
