@@ -1,0 +1,26 @@
+@media (max-width: 1000px) {
+	header {
+		width: 100%;
+		height: auto;
+	}
+
+	.site-title h1 {
+		font-size: 60px;
+	}
+
+	.site-title div {
+		font-size: 40px;
+	}
+
+	.menu-container-pc {
+		display: none;
+	}
+
+	.menu-container-mobile {
+		display: block;
+	}
+
+	.site img {
+		width: 70px;
+	}
+}
