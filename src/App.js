@@ -1,19 +1,13 @@
 import './index.css';
 import './media.css';
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import ReactDOM from 'react-dom';
 import profile from './img/profile.png';
 import github from './img/Github_logo.png';
 import { Link, Route } from 'react-router-dom';
 import instagram from './img/Instagram_logo.png';
+import PostList from './components/Blog/Tistory/index';
 import { FaRegHeart, FaRegComment, FaRegPaperPlane } from "react-icons/fa";
 
 function App() {
-
-	useEffect(() => {
-		const response = axios.get('tistory/manage/posts.json?category=-3&page=1&searchKeyword=&searchType=title&visibility=all', null, { widhCredential : true });
-	})
 
 	return (
 		<>
@@ -60,12 +54,7 @@ function App() {
 							<h2>New Post</h2>
 						</div>
 						<div className='list'>
-							<div>[MyBatis] Spring Boot Gradle 에 ...</div>
-							<div>[JAVA] VSCode에 Spring Boot 설치</div>
-							<div>[JAVA] VSCode JAVA 개발환경 설정</div>
-							<div>[JAVA] 윈도우(window) JAVA SE 11 ...</div>
-							<div>[React] Modal 만들기 (React-Modal ...</div>
-							<div>[CSS] 다음카페 게시글 본문 꾸미기</div>
+							<PostList />
 						</div>
 					</div>
 					<div className='instagram'>
