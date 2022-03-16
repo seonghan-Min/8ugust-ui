@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/8ugust-ui/static/css/main.f6681880.css",
+    "main.js": "/8ugust-ui/static/js/main.b2bfe0c0.js",
+    "static/media/Instagram_logo.png": "/8ugust-ui/static/media/Instagram_logo.7d3653be08060f585562.png",
+    "static/media/profile.png": "/8ugust-ui/static/media/profile.df76469891ba7aa66ff6.png",
+    "static/media/Github_logo.png": "/8ugust-ui/static/media/Github_logo.e9e2b31a0f183c2b6e69.png",
+    "index.html": "/8ugust-ui/index.html",
+    "main.f6681880.css.map": "/8ugust-ui/static/css/main.f6681880.css.map",
+    "main.b2bfe0c0.js.map": "/8ugust-ui/static/js/main.b2bfe0c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6681880.css",
+    "static/js/main.b2bfe0c0.js"
+  ]
+}
