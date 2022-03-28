@@ -54,7 +54,7 @@ function App() {
 							<h2>New Post</h2>
 						</div>
 						<div className='list'>
-							<PostList />
+							
 						</div>
 					</div>
 					<div className='instagram'>
